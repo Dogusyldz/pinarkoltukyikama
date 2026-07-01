@@ -833,38 +833,229 @@ function whatsappGonder() {
 
 
 
-/* Küçük telefonlar */
-@media(max-width:400px){
 
-
-    h1 {
-
-        font-size:30px !important;
-
-    }
-
-
-    h2,
-    .ek-faq-title,
-    .ek-acil-title {
-
-        font-size:26px !important;
-
-    }
-
-
-    .btn {
-
-        font-size:15px !important;
-
-    }
-
-
-}
-
-</style>
 
 
 
     </div>
+   <style>
+
+/* EMRE KAYA MOBİL OPTİMİZASYON */
+
+@media (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+
+/* Sabit üst bar */
+div[style*="position: fixed"]{
+    padding:10px 12px!important;
+}
+
+div[style*="position: fixed"] > div:first-child{
+    width:auto!important;
+    font-size:14px!important;
+}
+
+
+div[style*="Ankara Geneli"]{
+    display:none!important;
+}
+
+
+/* Sosyal ikonlar */
+div[style*="display: flex; gap: 8px"]{
+    display:none!important;
+}
+
+
+/* Hero alanı */
+div[style*="padding:60px 30px"]{
+    padding:35px 18px!important;
+}
+
+
+h1{
+    font-size:34px!important;
+    line-height:1.15!important;
+}
+
+
+p{
+    font-size:17px!important;
+    line-height:1.7!important;
+}
+
+
+
+/* Butonlar */
+
+.btn{
+
+width:100%!important;
+justify-content:center!important;
+padding:17px 20px!important;
+font-size:16px!important;
+
+}
+
+
+
+/* Sayaç kutuları */
+
+div[style*="grid-template-columns: repeat(2, 1fr)"]{
+
+grid-template-columns:1fr!important;
+
+}
+
+
+
+/* Hizmet kartları */
+
+.hizmet-kart{
+
+padding:25px!important;
+border-radius:25px!important;
+
+}
+
+
+.hizmet-kart h3{
+
+font-size:24px!important;
+
+}
+
+
+.hizmet-kart p{
+
+font-size:17px!important;
+
+}
+
+
+
+/* Bölüm başlıkları */
+
+h2,
+.ek-faq-title,
+.ek-acil-title{
+
+font-size:30px!important;
+line-height:1.2!important;
+
+}
+
+
+
+/* Nasıl çalışıyoruz numaraları */
+
+div[style*="width:70px; height:70px"]{
+
+width:60px!important;
+height:60px!important;
+
+}
+
+
+
+/* Tavsiye kartı */
+
+.ek-tavsiye-card{
+
+padding:25px 18px!important;
+border-radius:30px!important;
+
+}
+
+
+.ek-tavsiye-card h2{
+
+font-size:24px!important;
+
+}
+
+
+
+/* SSS */
+
+.ek-faq-item{
+
+padding:20px!important;
+
+}
+
+
+.ek-faq-question h3{
+
+font-size:16px!important;
+
+}
+
+
+
+/* Leke kartları */
+
+.ek-leke-card{
+
+padding:25px!important;
+
+}
+
+
+.ek-leke-card h3{
+
+font-size:22px!important;
+
+}
+
+
+
+/* Randevu popup */
+
+#randevuModal > div{
+
+width:92%!important;
+padding:22px!important;
+
+}
+
+
+}
+
+
+
+/* Çok küçük telefonlar */
+
+@media(max-width:400px){
+
+
+h1{
+
+font-size:30px!important;
+
+}
+
+
+h2,
+.ek-faq-title,
+.ek-acil-title{
+
+font-size:26px!important;
+
+}
+
+
+.btn{
+
+font-size:15px!important;
+
+}
+
+}
+
+</style> 
 </div>
