@@ -258,6 +258,207 @@ function whatsappGonder() {
     </div>
 </div>
 <!-- NASIL ÇALIŞIYORUZ BÖLÜMÜ BİTİŞ -->
+        <!-- SIKÇA SORULAN SORULAR BÖLÜMÜ BAŞLANGICI -->
+<style>
+    .faq-container {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 60px 20px;
+        background-color: #f8fafc; /* Görsellerdeki gibi hafif gri/buz beyazı arka plan */
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .faq-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .faq-subtitle {
+        color: #38bdf8; /* Görseldeki açık mavi destek rengi */
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .faq-title {
+        color: #0f172a;
+        font-size: 36px;
+        font-weight: 900;
+        font-style: italic;
+        margin: 0;
+        letter-spacing: -1px;
+    }
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .faq-item {
+        background-color: #ffffff;
+        border-radius: 24px;
+        padding: 25px 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+        transition: all 0.3s ease;
+    }
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .faq-question h3 {
+        margin: 0;
+        color: #0f172a;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+    .faq-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        border-radius: 50%;
+        background-color: #f0f9ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .faq-icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: #0ea5e9;
+        transition: transform 0.4s ease;
+    }
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+    .faq-answer-inner {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #f1f5f9;
+        color: #64748b;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    /* Aktif (Açık) Durum Stilleri */
+    .faq-item.active {
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .faq-item.active .faq-icon {
+        background-color: #0ea5e9;
+    }
+    .faq-item.active .faq-icon svg {
+        stroke: #ffffff;
+        transform: rotate(180deg);
+    }
+</style>
+
+<div class="faq-container">
+    <div class="faq-header">
+        <div class="faq-subtitle">DESTEK MERKEZİ</div>
+        <h2 class="faq-title">Merak Edilenler</h2>
+    </div>
+
+    <div class="faq-list">
+        
+        <!-- Soru 1 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Halılarım ne kadar sürede teslim edilir?</h3>
+                <div class="faq-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Ankara'nın hava şartlarına ve halı türüne bağlı olarak, halılarınız genellikle <span style="color: #0ea5e9; font-weight: 700;">3 ila 5 iş günü</span> içerisinde tamamen kurutulmuş, parfümlenmiş ve paketlenmiş şekilde adresinize teslim edilir.
+                </div>
+            </div>
+        </div>
+
+        <!-- Soru 2 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Hangi bölgelere ücretsiz servisiniz var?</h3>
+                <div class="faq-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Başta Çankaya, Keçiören, Yenimahalle ve Mamak olmak üzere tüm Ankara merkez ilçelerine ücretsiz servis ağımız mevcuttur. Uzak bölgeler veya çevre ilçeler için lütfen telefonla bilgi alınız.
+                </div>
+            </div>
+        </div>
+
+        <!-- Soru 3 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Yıkama işleminde hangi şampuanları kullanıyorsunuz?</h3>
+                <div class="faq-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Sağlığınız bizim için değerli. Halılarınızda Türkiye'nin en kaliteli halı şampuanı olan <span style="color: #16a34a; font-weight: 700; font-style: italic;">Era 111 Anti-Bakteriyel</span> bitkisel içerikli şampuanlar kullanıyoruz. Kimyasal kalıntı bırakmaz, bebekler ve evcil hayvanlar için güvenlidir.
+                </div>
+            </div>
+        </div>
+
+        <!-- Soru 4 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Leke çıkarma garantiniz var mı?</h3>
+                <div class="faq-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Çıkması mümkün olan tüm lekeler için profesyonel leke çıkarıcılar kullanıyoruz. Ancak halının dokusuna işlemiş ve rengini bozmuş (asit, çamaşır suyu yanığı vb.) lekeler dışında %95 oranında temizlik garantisi veriyoruz.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Akordeon Açılır/Kapanır Mantığı
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Tüm açık olanları kapat (Sadece 1 tane açık kalsın istersen)
+            document.querySelectorAll('.faq-item').forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Tıklanan kapalıysa aç
+            if (!isActive) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+<!-- SIKÇA SORULAN SORULAR BÖLÜMÜ BİTİŞ -->
+
 
     </div>
 </div>
