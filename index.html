@@ -67,7 +67,33 @@
                 <div style="font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: 700; margin-top: 5px;">Memnuniyet Garantisi</div>
             </div>
         </div>
-        
+    <style>
+/* Mobil cihazlar için özel düzenleme */
+@media (max-width: 768px) {
+    /* Hizmet kartlarını alt alta getir */
+    .hizmetler-container { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important; 
+    }
+    
+    /* İstatistik kutularını mobilde alt alta getir */
+    .stats-container { 
+        grid-template-columns: 1fr !important; 
+    }
+
+    /* Başlık boyutlarını mobilde küçült */
+    h1 { font-size: 32px !important; }
+    h2 { font-size: 28px !important; }
+    
+    /* Header (Üst menü) düzeni */
+    .header-nav { 
+        padding: 10px 15px !important; 
+        flex-direction: column !important; 
+        gap: 10px !important; 
+    }
+}
+</style>
+    
 <style>
     /* Kartların Modern Hali */
     .hizmet-kart {
