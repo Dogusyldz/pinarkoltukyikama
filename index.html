@@ -11,27 +11,48 @@
 </head>
 <body class="bg-white">
 
-    <header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+   <header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20 md:h-24">
                 <a href="https://vannhaliyikama.com/" class="flex items-center gap-3 group">
-                    <div class="w-12 h-10 rounded-2xl flex items-center justify-center shadow-lg shadow-sky-200 group-hover:rotate-12 transition-transform duration-300 bg-sky-100">
-                        <img src="./index_files/Van-dilek-halı-yıkama.png" alt="Van Dilek Halı Yıkama" class="object-cover h-8">
+                    <div class="w-12 h-10  rounded-2xl flex items-center justify-center shadow-lg shadow-sky-200 group-hover:rotate-12 transition-transform duration-300">
+                        <img src="./index_files/Van-dilek-halı-yıkama.png" alt="Van Dilek Halı Yıkama" class="logoo object-fit">
                     </div>
                     <div>
-                        <h1 class="text-2xl font-extrabold text-green-900 tracking-tighter leading-none">Dilek Halı<span class="text-sky-500">Yıkama</span></h1>
+                        <h1 class="text-2xl font-extrabold text-brand-dark tracking-tighter leading-none">Dilek Halı<span class="text-brand-blue">Yıkama</span></h1>
                         <p class="text-[10px] text-slate-400 uppercase tracking-[3px] font-bold mt-1">Profesyonel Tesis</p>
                     </div>
                 </a>
 
                 <div class="hidden md:flex items-center gap-10">
-                    <a href="#hizmetler" class="text-sm font-bold text-slate-600 hover:text-green-900">Hizmetlerimiz</a>
-                    <a href="tel:+905531253757" class="bg-sky-500 text-white px-7 py-3.5 rounded-2xl font-bold text-sm shadow-xl shadow-sky-500/30 hover:bg-sky-600 transition-all active:scale-95 flex items-center gap-2">
+                    <a href="https://vannhaliyikama.com/#hizmetler" class="nav-link text-sm font-bold text-slate-600 hover:text-brand-dark">Hizmetlerimiz</a>
+                    <a href="https://vannhaliyikama.com/#surec" class="nav-link text-sm font-bold text-slate-600 hover:text-brand-dark">Süreç</a>
+                    <a href="https://vannhaliyikama.com/#galeri" class="nav-link text-sm font-bold text-slate-600 hover:text-brand-dark">Fabrikamız</a>
+                    <a href="https://vannhaliyikama.com/#sss" class="nav-link text-sm font-bold text-slate-600 hover:text-brand-dark">Destek</a>
+                    <a href="tel:+905531253757" class="bg-brand-blue text-white px-7 py-3.5 rounded-2xl font-bold text-sm shadow-xl shadow-sky-500/30 hover:bg-sky-600 transition-all active:scale-95 flex items-center gap-2">
                         <i class="fa-solid fa-phone-volume"></i> 0553 125 37 57
                     </a>
                 </div>
+
+                <button id="mobile-btn" class="md:hidden p-2 text-slate-700 hover:text-brand-blue transition-colors">
+                    <i class="fa-solid fa-bars-staggered text-2xl" id="menu-icon"></i>
+                </button>
             </div>
         </nav>
+
+        <div id="mobile-menu" class="md:hidden fixed top-20 left-0 w-full bg-white border-b border-slate-100 shadow-2xl z-50">
+            <div class="p-6 space-y-4">
+                <a href="https://vannhaliyikama.com/#hizmetler" class="mobile-link block p-4 bg-slate-50 rounded-xl font-bold text-slate-700">Hizmetlerimiz</a>
+                <a href="https://vannhaliyikama.com/#surec" class="mobile-link block p-4 bg-slate-50 rounded-xl font-bold text-slate-700">Nasıl Çalışıyoruz?</a>
+                <a href="https://vannhaliyikama.com/#galeri" class="mobile-link block p-4 bg-slate-50 rounded-xl font-bold text-slate-700">Fabrikamız</a>
+                <a href="https://vannhaliyikama.com/#sss" class="mobile-link block p-4 bg-slate-50 rounded-xl font-bold text-slate-700">Sıkça Sorulanlar</a>
+                <div class="pt-4">
+                    <a href="tel:+905531253757" class="w-full flex justify-center items-center gap-3 bg-brand-blue text-white p-5 rounded-2xl font-black text-lg shadow-lg">
+                        <i class="fa-solid fa-phone"></i> Hemen Arayın
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div style="padding: 60px 30px; text-align: center;">
